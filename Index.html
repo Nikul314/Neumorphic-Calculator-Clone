@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Clone</title>
+    <!--bootstrap 5 file-->
+    <link rel="stylesheet" href="bootstrap 5/bootstrap.min.css">
+
+    <!--Fonts from googlefonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+
+    <!--main CSS file-->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section class="container">
+        <main class="row">
+
+            <!--Calculator display-->
+            <div class="input-blk">
+                <input id="input" type="text" placeholder="0" disabled>
+            </div>
+
+            <!--Calculator buttons-->
+            <div class="grid" id="btn-blk">
+                <button class="btn-clo" id="ac">C</button>
+                <button class="btn-clo" id="del">del</button>
+                <button class="btn-clo" id="percentage">%</button>
+                <button class="btn-clo" onclick="display('/')">&#247;</button>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button class="btn-clo" onclick="display('*')">x</button>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button class="btn-clo" onclick="display('-')">-</button>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button class="btn-clo" id="equal">=</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="display('0')">0</button>
+                <button class="btn-clo" onclick="display('+')">+</button>
+            </div>
+            
+        </main>
+    </section>
+    <!--main JS file-->
+    <script src="/Script.js"></script>
+    <script src="/bootstrap 5/bootstrap.min.js"></script>
+</body>
+</html>
